@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login & Register</title>
+  <link rel="stylesheet" href="styleee.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2 id="formTitle">Login</h2>
+
+    <form id="loginForm" onsubmit="return validateLogin()">
+      <input type="email" id="loginEmail" placeholder="Email">
+      <div class="password-field">
+        <input type="password" id="loginPassword" placeholder="Password">
+        <span onclick="togglePassword('loginPassword', this)">👁️</span>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+
+    <form id="registerForm" onsubmit="return validateRegister()" style="display: none;">
+      <input type="text" id="regName" placeholder="Name">
+      <input type="email" id="regEmail" placeholder="Email">
+      <div class="password-field">
+        <input type="password" id="regPassword" placeholder="Password">
+        <span onclick="togglePassword('regPassword', this)">👁️</span>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+
+    <p>
+      <a href="#" onclick="toggleForm()">Switch to Register</a>
+    </p>
+  </div>
+
+  <script src="scripttt.js"></script>
+</body>
+</html>
