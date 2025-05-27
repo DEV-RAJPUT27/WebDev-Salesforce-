@@ -1,0 +1,36 @@
+body {
+  background-color: lightblue;
+  font-family: Arial;
+}
+
+.quiz-box {
+  width: 400px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+#question {
+  font-size: 18px;
+  color: black;
+}
+
+.choice {
+  margin: 10px 0;
+  padding: 8px;
+  background-color: lightgray;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+button {
+  padding: 8px 15px;
+  margin-top: 15px;
+  background-color: green;
+  color: white;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
